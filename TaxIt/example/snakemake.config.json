@@ -1,0 +1,17 @@
+{
+  "threads" : 4,
+
+  "sample" : "sample/sample.mgf",
+
+  "database_reference"    : "database/refseq.fasta",
+
+  "taxonomy_mapping_ncbi" : "taxonomy/accession2taxid/prot.accession2taxid",
+  "taxonomy_mapping"  : "taxonomy/accession2taxid/prot.accession2taxid",
+  "taxonomy_nodes"    : "taxonomy/taxdump/nodes.dmp",
+  "taxonomy_names"    : "taxonomy/taxdump/names.dmp",
+
+  "search_engine" : "xtandem",
+  "xtandem_mods_variable" : "16@M",
+  "xtandem_pmmep" : 10,
+  "xtandem_pmmem" : 10
+}

@@ -1,0 +1,4 @@
+des: Contaminant DB from GPM: common Repository of Adventitious Proteins, cRAP 
+src: http://www.thegpm.org/crap/index.html
+ver: 2012.01.01
+

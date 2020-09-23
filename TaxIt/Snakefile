@@ -1,0 +1,47 @@
+import datetime
+import subprocess
+from glob import glob
+from snakemake.utils import R
+
+WORKFLOW_PATH = os.path.dirname(os.path.realpath(workflow.snakefile))
+
+
+### Configuration ###
+include: WORKFLOW_PATH + "/scripts_snakemake/configuration.snakefile"
+
+
+### Rules ###
+# iterations first, to load sample and database selection functions
+include: WORKFLOW_PATH + "/scripts_snakemake/iterations.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/correction.pipasic.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/correction.uniques.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/correction.weighted.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/download.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/hostfilter.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/preparation.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/processing.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/search.msgfplus.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/search.xtandem.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/taxonomy.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/versions.snakefile"
+include: WORKFLOW_PATH + "/scripts_snakemake/visualization.snakefile"
+
+
+### Execute Workflow ###
+rule all:
+    input:
+        "results/identified.taxid.txt",
+        "results/identified.names.txt",
+        "results/abundance.png",
+        "results/abundance_stacked.png",
+        "reports/versions.txt"
+
+
+### Snakemake logging ###
+onsuccess:
+    print("Workflow finished, no error")
+    shell("mkdir -p reports && cat {log} > reports/snakemake.success.log")
+
+onerror:
+    print("An error occurred")
+    shell("mkdir -p reports && cat {log} > reports/snakemake.error.log")
