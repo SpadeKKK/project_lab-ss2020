@@ -1,9 +1,9 @@
 # Siamese convolutional neural network
 
-## system requirements
+## System requirements
 Python > 3.6
 
-## install dependencies
+## Install dependencies
 install wget, numpy, pandas, pyteomics, TensorFlow > 2.0
 
 ## Step 1 : download data
@@ -17,9 +17,11 @@ split training data and validation data, merge mzid and mzml files to generate p
 
 * create training data hdf5 file
 ```
-python merge_training.py
+python merge_trai_set.py
 ```
 * create validation data hdf5 file
 ```
-python merge_test.py
+python merge_validation_set.py
 ```
+
+## Step 3 : 
