@@ -13,7 +13,7 @@ python download_files.py
 ```
 
 ## Step 2 : generate hdf5
-split data into training data and validation data, test data; merge mzid and mzml files to generate peptide-spectrum pairs in pandas dataframe, convert dataframes to hdf format
+split data into training data and validation data, merge mzid and mzml files to generate peptide-spectrum pairs in pandas dataframe, convert dataframes to hdf format
 
 * create training data hdf5 file
 ```
