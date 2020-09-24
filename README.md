@@ -19,6 +19,6 @@ In particular, we make the following modifications to the configuration file (sn
 - threads number : 36
 - memory : 16GB
 - search engine : X!Tandem
-- 'sample : run1 U4 2000ng.mgf' , use this [link](https://www.ebi.ac.uk/pride/archive/projects/PXD006118) to download the file.
+- 'sample : Run1_U4_2000ng.mgf' , use this [link](https://www.ebi.ac.uk/pride/archive/projects/PXD006118) to download the file.
 - 'database reference : small.fasta' , [link](https://owncloud.hpi.de/s/fa0aV3lp4Mu8Upq) for downloading.
 - 'HexBin Plot of KNN and Tandem Outputs.R' R script used to create plots 
