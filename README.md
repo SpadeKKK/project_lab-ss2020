@@ -11,7 +11,7 @@ This project consists of 3 submodules:
 In this submodule, we develope a siamese convolutional network
 
 ### Knn similarity search
-Here, we performe peptide identification using the Knnn similarity search
+Here, we perform peptide identification using the Knnn similarity search
 
 ### TaxIt/X!Tandem
 We use an existing search engine software and we compare the results with ours.
