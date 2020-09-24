@@ -7,6 +7,7 @@ Python > 3.6
 install wget, numpy, pandas, pyteomics, TensorFlow > 2.0
 
 ## Step 1 : download data
-'''python
+
+'''
 python download_files.py
 '''
