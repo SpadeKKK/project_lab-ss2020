@@ -55,7 +55,7 @@ python convert_raw_spectra.py
 ```
 
 ## Step 6 : spectra embeddings
-the following python script generates the spectra embeddings for the knn search, the model is stored in this [folder](https://github.com/jiahao95/proteomics/tree/master/Deep%20learning/_model_relu_32)
+the following python script generates the spectra embeddings for the knn search, the model is stored in this [folder](https://github.com/jiahao95/project_lab-ss2020/tree/master/Deep%20learning/_model_relu_32)
 ```
 python spectra_embedder.py
 ```
