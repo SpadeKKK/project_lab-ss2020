@@ -43,5 +43,8 @@ python model.py
 ```
 mono ThermoRawFileParser.exe -i=/home/user_folder/Run1_U4_2000ng.raw -o=/home/user_folder/output_name/ -f=2
 ```
-- 
+- run following python script to convert the .mzml file in hdf format
+```
+python generate_raw_spectra.py
+```
 
