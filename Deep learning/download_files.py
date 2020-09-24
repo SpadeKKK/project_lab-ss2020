@@ -31,3 +31,4 @@ list(map(lambda x: wget.download(x),dls))
 
 # Unzip, in case files are zipped 
 os.system('gunzip *.gz')
+
