@@ -35,6 +35,12 @@ it contains the architecture, performs the training, and saves the model
 ```
 python model.py
 ```
+### Check model performance
+Once the training process is completed, run the following script to compute euclidean distance and generate plots
+```
+python evaluation_and_plot.py
+```
+
 
 ## Step 5 : prepare spectra for the knn search
 - follow this [link](https://www.ebi.ac.uk/pride/archive/projects/PXD006118) and download Run1_U4_2000ng.raw
@@ -54,4 +60,4 @@ the following python script generates the spectra embeddings for the knn search,
 python spectra_embedder.py
 ```
 
-***Continue with creating peptide embedding and knn search in [here](https://github.com/jiahao95/proteomics/tree/master/KNN)***
+***Continue with creating peptide embeddings and knn search in [here](https://github.com/jiahao95/proteomics/tree/master/KNN)***
