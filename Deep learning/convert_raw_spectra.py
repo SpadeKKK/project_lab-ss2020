@@ -40,3 +40,4 @@ spectra_df[['SCAN', 'scan_number']] = spectra_df.scan.str.split("=", expand=True
 spectra_df = spectra_df[['file', 'id', 'mz', 'intensities', 'scan:number']]
 
 spectra_df.to_hdf('spectra_for_knn_search.hdf5', key="df", mode="w")
+
