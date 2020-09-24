@@ -36,7 +36,7 @@ it contains the architecture, performs the training, and saves the model
 python model.py
 ```
 
-## Step 5 : prepare spectra for knn search
+## Step 5 : prepare spectra for the knn search
 - follow this [link](https://www.ebi.ac.uk/pride/archive/projects/PXD006118) and download Run1_U4_2000ng.raw
 - follow instructions in [link](https://github.com/compomics/ThermoRawFileParser) to install command line tool for converting .raw file into .mzml file
 - run following command on terminal
@@ -45,6 +45,12 @@ mono ThermoRawFileParser.exe -i=/home/user_folder/Run1_U4_2000ng.raw -o=/home/us
 ```
 - run following python script to convert the .mzml file in hdf format
 ```
-python generate_raw_spectra.py
+python convert_raw_spectra.py
+```
+
+## Step 6 : spectra embeddings
+the following python script generates the spectra embeddings for the knn search, the model is stored in [folder](jiahao95/proteomics/Deep learning/_model_relu_32)
+```
+python spectra_embedder.py
 ```
 
