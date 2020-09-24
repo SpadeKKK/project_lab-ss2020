@@ -17,7 +17,7 @@ split training data and validation data, merge mzid and mzml files to generate p
 
 * create training data hdf5 file
 ```
-python merge_trai_set.py
+python merge_train_set.py
 ```
 * create validation data hdf5 file
 ```
