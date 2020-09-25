@@ -54,10 +54,6 @@ mono ThermoRawFileParser.exe -i=/home/user_folder/Run1_U4_2000ng.raw -o=/home/us
 python convert_raw_spectra.py
 ```
 
-## Step 6 : spectra embeddings
-the following python script generates the spectra embeddings for the knn search, the model is stored in this [folder](https://github.com/jiahao95/project_lab-ss2020/tree/master/Deep%20learning/_model_relu_32)
-```
-python spectra_embedder.py
-```
 
-***Continue with creating peptide embeddings and knn search in [here](https://github.com/jiahao95/proteomics/tree/master/KNN)*** 
+
+***Continue with preparing embeddings and knn search [here](https://github.com/jiahao95/proteomics/tree/master/KNN)*** 
