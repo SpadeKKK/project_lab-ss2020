@@ -60,4 +60,4 @@ the following python script generates the spectra embeddings for the knn search,
 python spectra_embedder.py
 ```
 
-***Continue with creating peptide embeddings and knn search in [here](https://github.com/jiahao95/proteomics/tree/master/KNN)***
+***Continue with creating peptide embeddings and knn search in [here](https://github.com/jiahao95/proteomics/tree/master/KNN)*** 
