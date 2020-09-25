@@ -1,5 +1,5 @@
 # Large Scale Metaproteomic Analysis powered by Machine Learning Metric Embedding Approach
-
+Participants: Jennifer D. Onwuchekwa, Maroua Filali, Jiahao Hu
 This project consists of 3 submodules:
 * deep learning
 * knn similarity search
