@@ -22,3 +22,4 @@ python sequence_embedder.py
 ```
 python faiss_unique_indexing_k50.py
 ```
+This returns a csv file with identified peptides, thus, it can be compared with the output from the X!Tandem.
